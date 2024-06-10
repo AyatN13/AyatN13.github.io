@@ -1,18 +1,48 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll(".carousel-image");
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.carousel-image');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const imageIndexDisplay = document.getElementById('imageIndex');
+    let currentImageIndex = 0;
+    let interval;
 
     function showImage(index) {
         images.forEach((img, i) => {
-            img.style.display = (i === index) ? "block" : "none";
+            img.classList.toggle('active', i === index);
         });
+        imageIndexDisplay.textContent = `${index + 1}/${images.length}`;
     }
 
     function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        showImage(currentImageIndex);
     }
 
-    showImage(currentIndex);
-    setInterval(nextImage, 3000); // Change image every 3 seconds
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showImage(currentImageIndex);
+    }
+
+    function startCarousel() {
+        interval = setInterval(nextImage, 10000); // 10 seconds
+    }
+
+    function stopCarousel() {
+        clearInterval(interval);
+    }
+
+    prevBtn.addEventListener('click', () => {
+        stopCarousel();
+        prevImage();
+        startCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        stopCarousel();
+        nextImage();
+        startCarousel();
+    });
+
+    showImage(currentImageIndex);
+    startCarousel();
 });

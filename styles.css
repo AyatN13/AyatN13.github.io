@@ -21,7 +21,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 0.8; /* Slightly faded */
     transition: opacity 1s ease-in-out;
 }
 
@@ -31,15 +31,15 @@ body, html {
 
 .carousel-description {
     position: absolute;
-    bottom: 50px; /* Adjusted to be above the controls */
+    bottom: 50px;
     left: 20px;
-    color: white;
+    color: darkgrey;
     font-size: 1rem;
 }
 
 .carousel-controls {
     position: absolute;
-    bottom: 20px; /* Adjust as needed to position correctly */
+    bottom: 20px;
     left: 20px;
     display: flex;
     gap: 5px;
@@ -56,9 +56,9 @@ body, html {
 
 header {
     position: absolute;
-    top: 20px;
+    top: 60px; /* Lowered text */
     left: 20px;
-    color: white;
+    color: darkgrey;
     text-align: left; /* Ensure text is left-aligned */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
@@ -68,7 +68,7 @@ h1, h2, h3 {
 }
 
 header a {
-    color: #C71585; /* Dark pink color for links */
+    color: #ff69b4; /* Hot pink color for links */
     text-decoration: none;
 }
 

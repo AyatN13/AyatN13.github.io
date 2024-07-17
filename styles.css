@@ -11,9 +11,6 @@ body, html {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -32,27 +29,29 @@ body, html {
     opacity: 1;
 }
 
+.carousel-description {
+    position: absolute;
+    bottom: 50px; /* Adjusted to be above the controls */
+    left: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
 .carousel-controls {
     position: absolute;
-    bottom: 10px;
-    width: 100%;
+    bottom: 20px; /* Adjust as needed to position correctly */
+    left: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
 }
 
 .carousel-controls button {
-    background: none;
+    background: rgba(0, 0, 0, 0.5);
     border: none;
-    font-size: 2rem;
+    color: white;
+    padding: 0.2em 0.5em;
     cursor: pointer;
-    color: white;
-}
-
-.carousel-controls #imageIndex {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 10px;
+    font-size: 1rem; /* Smaller size for the buttons */
 }
 
 header {
@@ -60,9 +59,19 @@ header {
     top: 20px;
     left: 20px;
     color: white;
+    text-align: left; /* Ensure text is left-aligned */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 h1, h2, h3 {
     margin: 5px 0;
+}
+
+header a {
+    color: #C71585; /* Dark pink color for links */
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
 }

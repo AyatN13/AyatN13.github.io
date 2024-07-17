@@ -21,7 +21,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.8; /* Slightly faded */
+    filter: brightness(0.9); /* Slightly lightened */
     transition: opacity 1s ease-in-out;
 }
 

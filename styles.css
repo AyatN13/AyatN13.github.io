@@ -73,9 +73,9 @@ header a:hover {
 }
 
 .projects-title {
-    color: black;
-    font-size: 3rem;
-    margin: 0;
+    color: darkgray;
+    font-size: 2rem;
+    margin: 10;
     font-weight: bold;
 }
 
@@ -92,7 +92,7 @@ main {
 }
 
 .project-title {
-    color: black;
+    color: darkgrey;
     font-size: 1rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -107,8 +107,8 @@ main {
 }
 
 .project-box {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: .5px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
@@ -121,13 +121,13 @@ main {
 }
 
 .project-subtitle {
-    color: grey;
+    color: darkgrey;
     margin: 0;
     font-size: 1.2rem;
 }
 
 .project-image {
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;

@@ -6,71 +6,17 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.carousel-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-.carousel-image.active {
-    display: block;
-}
-
-.carousel-description {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-controls {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.carousel-controls button {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 12px;
-}
-
-.carousel-controls span {
-    white-space: nowrap;
-}
-
 header {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    text-align: left;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
-header h1, header h3 {
-    margin: 5px 0;
+.projects-title {
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
 }
 
 main {

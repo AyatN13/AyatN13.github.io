@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('nextBtn');
     const imageIndexDisplay = document.getElementById('imageIndex');
     const descriptions = [
-        "CN Tower, Toronto Ontario",
-        "Amsterdam Castle Muiderslot",
-        "Isabella Stewart Garden Museum, Boston, MA"
+        "CN Tower: Toronto Ontario",
+        "Isabella Stewart Gardner Museum: Boston, Massachusetts",
+        "Peace Palace: Hague, Netherlands"
     ];
     let currentImageIndex = 0;
     let interval;

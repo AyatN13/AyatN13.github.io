@@ -4,13 +4,13 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
+    color: lightgrey; /* Light grey text for the whole site */
 }
 
 header {
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    color: darkgrey;
 }
 
 header a {
@@ -19,6 +19,7 @@ header a {
 
 header a:hover {
     text-decoration: underline;
+    color: lightpink; /* Light pink on hover */
 }
 
 .carousel {
@@ -44,19 +45,17 @@ header a:hover {
     position: absolute;
     top: 60px; /* Adjust as needed */
     left: 20px; /* Shifted to the left */
-    color: darkgrey; /* Dark grey font */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 10px; /* Curved edges */
+}
+
+.carousel-description h1, .carousel-description h3, .carousel-description a {
+    color: lightgrey; /* Light grey text */
 }
 
 .carousel-description h1 {
-    color: black;
-}
-
-.carousel-description a {
-    color: lightpink;
-}
-
-.carousel-description a:hover {
-    color: lightpink;
+    color: #333; /* Extra dark grey for the name */
 }
 
 .carousel-controls {
@@ -85,10 +84,12 @@ header a:hover {
 }
 
 .projects-title {
-    color: black;
+    color: #333; /* Extra dark grey */
     font-size: 2rem;
     margin: 10px;
     font-weight: bold;
+    background: lightpink; /* Light pink background */
+    padding: 10px;
 }
 
 main {
@@ -104,7 +105,7 @@ main {
 }
 
 .project-title {
-    color: darkgrey;
+    color: lightgrey; /* Light grey text */
     font-size: 1rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -128,12 +129,12 @@ main {
 }
 
 .project-box:hover {
-    background-color: #ff69b4;
+    background-color: #ffb6c1; /* Light pink hover */
     transform: scale(1.05);
 }
 
 .project-subtitle {
-    color: darkgrey;
+    color: lightgrey; /* Light grey text */
     margin: 0;
     font-size: 1.2rem;
 }
@@ -146,19 +147,22 @@ main {
 }
 
 .project-title-box {
-    border: 2px solid darkgrey;
+    border: 2px solid #333; /* Extra dark grey */
     padding: 10px;
     margin-bottom: 20px;
+    background: lightpink; /* Light pink background */
 }
 
-.immersive-media-design {
+.immersive-media-design, .hackathons-title {
     font-size: 1.5rem;
+    color: #333; /* Extra dark grey */
 }
 
 /* For Projects Page */
 .project-grid {
     display: flex;
     justify-content: space-around; /* Equally space projects */
+    flex-wrap: wrap; /* Wrap projects in rows */
     gap: 20px;
 }
 

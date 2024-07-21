@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('nextBtn');
     const imageIndexDisplay = document.getElementById('imageIndex');
     const descriptions = [
-        "Street Art Museum: Amsterdam, Netherlands">
-        "CN Tower: Toronto, Ontario">
-        "Naples Beach: Naples, Florida">
-        "The Paint Ladies: San Francisco, California">
-        "Boston Public Library: Boston, Massachusetts"> 
+        "Street Art Museum: Amsterdam, Netherlands",
+        "CN Tower: Toronto, Ontario",
+        "Naples Beach: Naples, Florida",
+        "The Paint Ladies: San Francisco, California",
+        "Boston Public Library: Boston, Massachusetts",
     ];
     let currentImageIndex = 0;
     let interval;

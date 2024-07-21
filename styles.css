@@ -33,6 +33,7 @@ header a:hover {
     height: 100%;
     display: none;
     object-fit: cover;
+    opacity: 0.8; /* Slightly sheer */
 }
 
 .carousel-image.active {
@@ -42,20 +43,30 @@ header a:hover {
 .carousel-description {
     position: absolute;
     top: 60px; /* Adjust as needed */
-    left: 5px; /* Adjust as needed */
+    left: 20px; /* Shifted to the left */
     background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for visibility */
-    color: white;
+    color: darkgrey; /* Dark grey font */
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 10px; /* Curved edges */
+}
+
+.carousel-description h1, .carousel-description h3, .carousel-description a {
+    color: darkgrey;
+}
+
+.carousel-description a {
+    color: pink;
 }
 
 .carousel-controls {
     position: absolute;
     bottom: 20px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
+    left: 20px; /* Shifted to the left */
     display: flex;
     align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    padding: 5px;
+    border-radius: 10px; /* Curved edges */
 }
 
 #prevBtn, #nextBtn {
@@ -64,7 +75,7 @@ header a:hover {
     color: white;
     padding: 10px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Smaller font size */
 }
 
 #imageIndex {
@@ -75,7 +86,7 @@ header a:hover {
 .projects-title {
     color: darkgray;
     font-size: 2rem;
-    margin: 10;
+    margin: 10px;
     font-weight: bold;
 }
 
@@ -108,7 +119,7 @@ main {
 
 .project-box {
     background-color: white;
-    border: .5px solid #ddd;
+    border: 0.5px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
@@ -116,7 +127,7 @@ main {
 }
 
 .project-box:hover {
-    background-color: #ff69b4;
+    background-color: #f887c0;
     transform: scale(1.05);
 }
 
@@ -131,4 +142,27 @@ main {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.project-title-box {
+    border: 2px solid darkgrey;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.immersive-media-design {
+    font-size: 1.5rem;
+}
+
+/* For Projects Page */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-grid .project-box {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 0;
 }

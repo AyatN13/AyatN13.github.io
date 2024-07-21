@@ -6,10 +6,78 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-header {
+.carousel {
+    position: relative;
     width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-description {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.carousel-controls span {
+    white-space: nowrap;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1, header h3 {
+    margin: 5px 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-section {
@@ -18,12 +86,12 @@ header {
 }
 
 .project-title {
-    color: black; /* Change color to black */
+    color: black;
     font-size: 2rem;
     margin-bottom: 20px;
-    font-weight: bold; /* Make the text bold */
-    background: none; /* Remove background */
-    border: none; /* Remove border */
+    font-weight: bold;
+    background: none;
+    border: none;
     padding: 0;
 }
 
@@ -37,17 +105,24 @@ header {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin: 10px; /* Add margin for spacing */
+    margin: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-box:hover {
-    background-color: #ff69b4; /* Pink hover effect */
-    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: #ff69b4;
+    transform: scale(1.05);
 }
 
 .project-subtitle {
     color: grey;
     margin: 0;
     font-size: 1.2rem;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }

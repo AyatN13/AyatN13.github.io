@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img.style.display = i === index ? 'block' : 'none';
         });
         imageIndexDisplay.textContent = descriptions[index];
+        updateButtons();
     }
 
     function nextImage() {
@@ -35,6 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function stopCarousel() {
         clearInterval(interval);
+    }
+
+    function updateButtons() {
+        const buttons = document.querySelectorAll('.button-wrapper span');
+        buttons.forEach((button, index) => {
+            button.textContent = currentImageIndex + 1 === index + 1 ? index + 1 : "";
+        });
     }
 
     prevBtn.addEventListener('click', () => {

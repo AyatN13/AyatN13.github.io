@@ -3,8 +3,8 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use the same font as Jerry's */
-    color: white; /* White text for contrast */
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white; /* White text for better contrast */
 }
 
 .carousel {
@@ -19,7 +19,7 @@ body, html {
     height: 100%;
     display: none;
     object-fit: cover;
-    opacity: 0.8; /* Slightly sheer to darken the image */
+    opacity: 0.5; /* Darker sheer */
 }
 
 .carousel-image.active {
@@ -28,9 +28,9 @@ body, html {
 
 .carousel-description {
     position: absolute;
-    top: 20%; /* Position closer to the top */
-    left: 10%; /* Shifted to the left */
-    text-align: left; /* Align text to the left */
+    top: 15%; /* Adjust to position the text higher */
+    left: 5%; /* Positioning further to the left */
+    text-align: left; /* Align the text to the left */
     color: white;
     background: none; /* Remove background color */
     padding: 0; /* Remove padding */
@@ -38,31 +38,47 @@ body, html {
 }
 
 .carousel-description h1 {
-    font-size: 4rem; /* Larger font size for the name */
+    font-size: 2.5rem; /* Smaller font size for the name */
     font-weight: bold; /* Bold text for the name */
     margin: 0; /* Remove margin */
 }
 
 .carousel-description h3 {
-    font-size: 1.7rem; /* Adjusted font size for subheadings */
+    font-size: 1.2rem; /* Smaller font size for subheadings */
     font-weight: normal; /* Normal weight for subheadings */
     margin: 10px 0; /* Adjust margin */
 }
 
 .carousel-description a {
     color: white; /* White color for links */
-    text-decoration: underline; /* Underline links */
+    text-decoration: none; /* Remove underline for links */
+    font-size: 1rem; /* Smaller link font size */
+}
+
+.carousel-description a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .carousel-controls {
     position: absolute;
-    bottom: 20px; /* Position controls at the bottom */
-    left: 10%; /* Align with the text */
+    bottom: 10px; /* Adjust as needed */
+    left: 5%; /* Align with the text */
     display: flex;
     align-items: center;
     background: none; /* Remove background color */
     padding: 5px;
     border-radius: 0; /* No rounded edges */
+}
+
+.carousel-controls .button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-controls .button-wrapper span {
+    font-size: 1rem; /* Smaller font size */
+    color: white;
+    margin-right: 5px; /* Space between number and button */
 }
 
 #prevBtn, #nextBtn {
@@ -71,11 +87,12 @@ body, html {
     color: white;
     padding: 10px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #imageIndex {
     color: white;
-    margin: 0 10px;
-    font-size: 1rem; /* Font size for the image index */
+    margin-bottom: 10px; /* Space between description and buttons */
+    font-size: 1.2rem; /* Adjust description font size */
+    text-align: left;
 }

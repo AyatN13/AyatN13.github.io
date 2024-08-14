@@ -4,22 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    color: lightgrey; /* Light grey text for the whole site */
-}
-
-header {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-header a {
-    color: lightpink;
-}
-
-header a:hover {
-    text-decoration: underline;
-    color: lightpink; /* Light pink on hover */
+    color: white; /* White text for better contrast */
 }
 
 .carousel {
@@ -43,135 +28,54 @@ header a:hover {
 
 .carousel-description {
     position: absolute;
-    top: 60px; /* Adjust as needed */
-    left: 20px; /* Shifted to the left */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px;
-    border-radius: 10px; /* Curved edges */
-}
-
-.carousel-description h1, .carousel-description h3, .carousel-description a {
-    color: lightgrey; /* Light grey text */
+    top: 30%; /* Adjust to position the text higher */
+    left: 10%; /* Positioning slightly to the left */
+    text-align: left; /* Align the text to the left */
+    color: white;
+    background: none; /* Remove background color */
+    padding: 0; /* Remove padding */
+    border-radius: 0; /* No rounded edges */
 }
 
 .carousel-description h1 {
-    color: #333; /* Extra dark grey for the name */
+    font-size: 3rem; /* Larger font size for the name */
+    font-weight: bold; /* Bold text for the name */
+    margin: 0; /* Remove margin */
+}
+
+.carousel-description h3 {
+    font-size: 1.5rem; /* Font size for subheadings */
+    font-weight: normal; /* Normal weight for subheadings */
+    margin: 10px 0; /* Adjust margin */
+}
+
+.carousel-description a {
+    color: white; /* White color for links */
+    text-decoration: underline; /* Underline links */
 }
 
 .carousel-controls {
     position: absolute;
     bottom: 20px; /* Adjust as needed */
-    left: 20px; /* Shifted to the left */
+    left: 10%; /* Align with the text */
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    background: none; /* Remove background color */
     padding: 5px;
-    border-radius: 10px; /* Curved edges */
+    border-radius: 0; /* No rounded edges */
 }
 
 #prevBtn, #nextBtn {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Button background for contrast */
     border: none;
     color: white;
     padding: 10px;
     cursor: pointer;
-    font-size: 1.2rem; /* Smaller font size */
+    font-size: 1.2rem;
 }
 
 #imageIndex {
     color: white;
     margin: 0 10px;
-}
-
-.projects-title {
-    color: #333; /* Extra dark grey */
-    font-size: 2rem;
-    margin: 10px;
-    font-weight: bold;
-    background: #FFDADA; /* Light pink background */
-    padding: 10px;
-}
-
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.project-title {
-    color: lightgrey; /* Light grey text */
-    font-size: 1rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.project-link {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.project-box {
-    background-color: white;
-    border: 0.5px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-box:hover {
-    background-color: #ffb6c1; /* Light pink hover */
-    transform: scale(1.05);
-}
-
-.project-subtitle {
-    color: lightgrey; /* Light grey text */
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.project-title-box {
-    border: 2px solid #333; /* Extra dark grey */
-    padding: 10px;
-    margin-bottom: 20px;
-    background: #FFDADA; /* Light pink background */
-}
-
-.immersive-media-design, .hackathons-title {
-    font-size: 1.5rem;
-    color: #333; /* Extra dark grey */
-}
-
-/* For Projects Page */
-.project-grid {
-    display: flex;
-    justify-content: space-around; /* Equally space projects */
-    flex-wrap: wrap; /* Wrap projects in rows */
-    gap: 20px;
-}
-
-.project-grid .project-box {
-    flex: 1 1 30%;
-    max-width: 30%;
-    margin: 0;
-}
-
-.project-link:hover {
-    color: lightpink;
+    font-size: 1rem; /* Font size for the image index */
 }

@@ -27,8 +27,12 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    padding-left: 50px; /* Align content to the left */
+}
+
+.content-left {
+    text-align: left;
 }
 
 h1 {
@@ -41,7 +45,7 @@ p {
 }
 
 a {
-    color: #00f;
+    color: pink;
     text-decoration: none;
 }
 
@@ -51,22 +55,27 @@ a:hover {
 
 /* Projects Page Styles */
 .header {
-    text-align: center;
-    padding: 50px 0;
+    text-align: left; /* Align to the left */
+    padding: 50px 50px 0 50px;
     font-size: 3em;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display: flex; /* Align projects in a row */
+    justify-content: space-between; /* Space between the projects */
+    padding: 20px 50px; /* Add padding */
 }
 
 .project-card {
     background-color: #222;
     padding: 20px;
     border-radius: 8px;
+    width: 30%; /* Ensure three cards fit in a row */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-card:hover {
+    background-color: lightpink; /* Light pink hover effect */
 }
 
 .project-card img {

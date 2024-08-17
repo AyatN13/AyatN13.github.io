@@ -4,105 +4,16 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Helvetica Neue', sans-serif;
-    color: white; /* White text for better contrast */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text for readability */
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-}
-
-.carousel-image {
-    width: 100%;
-    height: 100%;
-    display: none;
-    object-fit: cover;
-    opacity: 0.5; /* Darker sheer */
-}
-
-.carousel-image.active {
-    display: block;
-}
-
-.carousel-description {
-    position: absolute;
-    top: 15%; /* Adjust to position the text higher */
-    left: 5%; /* Positioning further to the left */
-    text-align: left; /* Align the text to the left */
-    color: white;
-    background: none; /* Remove background color */
-    padding: 0; /* Remove padding */
-    border-radius: 0; /* No rounded edges */
-}
-
-.carousel-description h1 {
-    font-size: 2.5rem; /* Smaller font size for the name */
-    font-weight: bold; /* Bold text for the name */
-    margin: 0; /* Remove margin */
-}
-
-.carousel-description h3 {
-    font-size: 1.2rem; /* Smaller font size for subheadings */
-    font-weight: normal; /* Normal weight for subheadings */
-    margin: 10px 0; /* Adjust margin */
-}
-
-.carousel-description a {
-    color: white; /* White color for links */
-    text-decoration: none; /* Remove underline for links */
-    font-size: 1rem; /* Smaller link font size */
-}
-
-.carousel-description a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-.carousel-controls {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 5%; /* Align with the text */
-    display: flex;
-    align-items: center;
-    background: none; /* Remove background color */
-    padding: 5px;
-    border-radius: 0; /* No rounded edges */
-}
-
-.carousel-controls .button-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.carousel-controls .button-wrapper span {
-    font-size: 1rem; /* Smaller font size */
-    color: white;
-    margin-right: 5px; /* Space between number and button */
-}
-
-#prevBtn, #nextBtn {
-    background-color: rgba(0, 0, 0, 0.5); /* Button background for contrast */
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#imageIndex {
-    color: white;
-    margin-bottom: 10px; /* Space between description and buttons */
-    font-size: 1.2rem; /* Adjust description font size */
-    text-align: left;
-}
-
-/* Style for the Home button */
+/* Home button styling */
 .home-button {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #333; /* Dark background for contrast */
-    color: #ccc; /* Light gray text */
+    background-color: #333; /* Dark background */
+    color: #ff69b4; /* Pink text */
     text-decoration: none;
     font-size: 1rem;
     position: absolute;
@@ -113,6 +24,76 @@ body, html {
 }
 
 .home-button:hover {
-    color: #ff69b4; /* Pink text on hover */
-    background-color: #444; /* Slightly lighter background on hover */
+    color: #fff; /* White text on hover */
+    background-color: #ff69b4; /* Pink background on hover */
+}
+
+/* Title and section headers */
+.projects-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Project grid and box styling */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-box:hover {
+    background-color: #ffe4e1; /* Light pink background on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Pink color for all links */
+a {
+    color: #ff69b4; /* Pink links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff1493; /* Darker pink on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
 }

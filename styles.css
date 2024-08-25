@@ -6,6 +6,7 @@ body, html {
     height: 100%;
     width: 100%;
     color: black;
+    overflow: hidden; /* Prevents scrollbars */
 }
 
 /* Home Page Specific Styles */
@@ -13,45 +14,48 @@ body, html {
     background-image: url('IMG_1553.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed during scroll */
     height: 100vh;
+    width: 100vw;
     position: relative;
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3); /* Lighter overlay */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content towards the top */
-    align-items: flex-start;
-    padding: 20px 20px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .content-left {
-    text-align: left;
+    text-align: center; /* Center text */
     max-width: 600px;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4em;
     margin: 0;
+    color: white;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.5em;
+    color: white;
 }
 
 a {
-    color: pink;
+    color: #dddddd; /* Slightly lighter for contrast */
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #ffffff; /* Subtle color change */
 }
 
 /* Projects Page Specific Styles */

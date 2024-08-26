@@ -4,12 +4,11 @@ body, html {
     font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
-    color: black;
+    color: white;
+    background-color: black;
 }
 
-/* Home Page Specific Styles */
 .background-image {
-    background-image: url('IMG_1553.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -25,9 +24,9 @@ body, html {
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content towards the top */
+    justify-content: center; /* Align content vertically in the middle */
     align-items: flex-start;
-    padding: 20px 20px;
+    padding: 0 40px; /* More padding to space content better */
 }
 
 .content-left {
@@ -36,16 +35,18 @@ body, html {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
+    line-height: 1.2; /* Slightly tighter line spacing */
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin: 10px 0; /* Add some spacing between lines */
 }
 
 a {
-    color: pink;
+    color: pink; /* Pink color as per your preference */
     text-decoration: none;
 }
 

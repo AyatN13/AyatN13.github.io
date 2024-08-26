@@ -18,8 +18,9 @@ body, html {
     position: relative;
 }
 
+/* Home Page Specific Styles */
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Slight tint over the background image */
     position: absolute;
     top: 0;
     left: 0;
@@ -27,25 +28,28 @@ body, html {
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Align content towards the top */
     align-items: flex-start;
-    padding: 20vh 10%;
-}
-
-.content-left {
-    text-align: left;
-    max-width: 600px;
-    padding: 20px;
+    padding: 15vh 8%; /* Move content up and to the left */
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3em; /* Slightly larger font to match the style */
     margin: 0;
+    padding-left: 0.5em; /* Adjusted for a more precise alignment */
 }
 
 p {
     font-size: 1.2em;
     margin: 10px 0;
+    padding-left: 0.5em; /* Adjusted for alignment with the title */
+}
+
+
+.content-left {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
 }
 
 a {

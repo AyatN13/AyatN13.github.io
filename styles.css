@@ -4,11 +4,13 @@ body, html {
     font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #f0f0f0; /* Very light grey background */
 }
 
+/* Home Page Specific Styles */
 .background-image {
+    background-image: url('IMG_1553.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -26,22 +28,23 @@ body, html {
     flex-direction: column;
     justify-content: center; /* Align content vertically in the middle */
     align-items: flex-start;
-    padding: 0 40px; /* More padding to space content better */
+    padding: 0 40px; /* Add more horizontal padding */
+    padding-top: 20vh; /* Add vertical padding to move content down */
 }
 
 .content-left {
     text-align: left;
     max-width: 600px;
+    padding-left: 20px; /* Move content inward a bit */
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
-    line-height: 1.2; /* Slightly tighter line spacing */
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px 0; /* Add some spacing between lines */
 }
 

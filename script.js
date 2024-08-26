@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Boston Public Library: Boston, Massachusetts"
         },
         {
-            url: 'IMG_1554.jpg', 
+            url: 'IMG_0372.jpg', 
             description: "CN Tower: Toronto, Ontario"
         },
         {

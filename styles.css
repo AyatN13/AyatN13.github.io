@@ -220,3 +220,21 @@ a:hover {
     background-color: #f3d1d1; /* Light pink hover effect */
     transform: translateY(-5px);
 }
+
+/* Home Link for Projects Page */
+.home-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+.home-link:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}

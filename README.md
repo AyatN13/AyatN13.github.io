@@ -4,4 +4,4 @@ http://ayatnoor.com
 
 Tech Stack:
 Framework: Visual Studio Code
-Languages: Javascript, HTML, CSS
+Languages: HTML, CSS

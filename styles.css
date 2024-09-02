@@ -11,36 +11,29 @@ body, html {
 
 /* Home Page Specific Styles */
 .background-image {
-    background-image: url('IMG_1572.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
 }
 
+/* Background Images */
+.background-image.image-1 {
+    background-image: url('IMG_1572.jpg');
+}
+
+.background-image.image-2 {
+    background-image: url('IMG_3565.jpg');
+}
+
 .background-image.image-2 {
     background-image: url('IMG_3558.jpg');
 }
 
-.background-image.image-3 {
-    background-image: url('IMG_3559.jpg');
-}
-
-.background-image.image-3 {
+.background-image.image-4 {
     background-image: url('IMG_3561.PNG');
 }
 
-.background-image.image-3 {
-    background-image: url('IMG_3563.jpg');
-}
-
-.background-image.image-3 {
-    background-image: url('IMG_3564.jpg');
-}
-
-.background-image.image-3 {
-    background-image: url('IMG_3565.jpg');
-}
 
 /* Home Page Specific Styles */
 .overlay {
@@ -151,4 +144,37 @@ a:hover {
 .project-card:hover {
     background-color: #f3d1d1; /* Light pink hover effect */
     transform: translateY(-5px);
+}
+
+/* Navigation buttons and image description */
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+.carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.carousel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-nav .image-number,
+.carousel-nav .image-description {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1em;
+    color: #ddd;
 }

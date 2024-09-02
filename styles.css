@@ -33,6 +33,25 @@ body, html {
     padding: 15vh 8%; /* Move content up and to the left */
 }
 
+/* Adjusted content placement */
+.content-left {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    position: absolute;
+    top: 20%; /* Adjust vertical position */
+    left: 10%; /* Adjust horizontal position */
+    transform: translate(0, -20%); /* Fine-tune to keep text off face */
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1200px) {
+    .content-left {
+        top: 25%; /* Adjust vertical position for large screens */
+        left: 15%; /* Adjust horizontal position for large screens */
+    }
+}
+
 h1 {
     font-size: 3em; /* Slightly larger font to match the style */
     margin: 0;
@@ -43,13 +62,6 @@ p {
     font-size: 1.2em;
     margin: 10px 0;
     padding-left: 0.5em; /* Adjusted for alignment with the title */
-}
-
-
-.content-left {
-    text-align: left;
-    max-width: 600px;
-    padding: 20px;
 }
 
 a {
@@ -67,7 +79,6 @@ a:hover {
     padding: 20px;
 }
 
-/* Adjusted Header Style for Project Pages */
 .header {
     font-size: 2.5em; /* Adjust font size */
     margin-bottom: 20px;
@@ -116,134 +127,4 @@ a:hover {
 .project-card:hover {
     background-color: #f3d1d1; /* Light pink hover effect */
     transform: translateY(-5px);
-}
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-    color: black;
-    background-color: #f0f0f0;
-}
-
-/* Home Page Specific Styles */
-.background-image {
-    background-image: url('IMG_1572.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20vh 10%;
-}
-
-.content-left {
-    max-width: 800px; /* Limit the width for better readability */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px;
-}
-
-h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-a {
-    color: pink;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Projects Page Specific Styles */
-.projects-page {
-    background-color: #ffffff;
-    padding: 20px;
-}
-
-.header {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: left;
-}
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.project-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    max-width: 300px;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-card img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.project-card h3 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.project-card p {
-    font-size: 1em;
-    margin: 5px 0;
-}
-
-.project-card:hover {
-    background-color: #f3d1d1; /* Light pink hover effect */
-    transform: translateY(-5px);
-}
-
-/* Home Link for Projects Page */
-.home-link {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    z-index: 1000; /* Ensure it appears on top of other elements */
-}
-
-.home-link:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
 }
